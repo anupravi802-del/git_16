@@ -1,0 +1,176 @@
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 ~ (master)
+$ cd C:\git 15(2)
+bash: syntax error near unexpected token `('
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 ~ (master)
+$ cd C:\git16
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16
+$ ls
+'New Text Document.txt'   Pandas_30Mar_WEE-checkpoint.ipynb   hlo.py
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16
+$ git init
+Initialized empty Git repository in C:/git16/.git/
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+        Pandas_30Mar_WEE-checkpoint.ipynb
+        hlo.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git add .
+warning: in the working copy of 'Pandas_30Mar_WEE-checkpoint.ipynb', LF will be
+replaced by CRLF the next time Git touches it
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   New Text Document.txt
+        new file:   Pandas_30Mar_WEE-checkpoint.ipynb
+        new file:   hlo.py
+
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git commit -m "first commit"
+[master (root-commit) 6a0c9b0] first commit
+ 3 files changed, 20700 insertions(+)
+ create mode 100644 New Text Document.txt
+ create mode 100644 Pandas_30Mar_WEE-checkpoint.ipynb
+ create mode 100644 hlo.py
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git remote add origin https://github.com/anupravi802-del/git_16.git
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 80.75 KiB | 1.83 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/anupravi802-del/git_16.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git add .
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    New Text Document.txt
+        new file:   new.py.txt
+
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git commit -m "2nd commit"
+[master de0e531] 2nd commit
+ 2 files changed, 1 insertion(+)
+ delete mode 100644 New Text Document.txt
+ create mode 100644 new.py.txt
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 141.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anupravi802-del/git_16.git
+   6a0c9b0..de0e531  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ ls
+'New 1'/   Pandas_30Mar_WEE-checkpoint.ipynb   hlo.py   new.py.txt
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git add .
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   New 1/condition.py.py
+
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ ^C
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git commit -m "3nd commit"
+[master 9d62bb7] 3nd commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 New 1/condition.py.py
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$  git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 378 bytes | 94.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anupravi802-del/git_16.git
+   de0e531..9d62bb7  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git add .
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   new.py.txt
+
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$  git commit -m "modified commit"
+[master 6786770] modified commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$  git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 141.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anupravi802-del/git_16.git
+   9d62bb7..6786770  master -> master
+branch 'master' set up to track 'origin/master'.
+
+Bhagyashree A G@LAPTOP-7MGH8E85 MINGW64 /c/git16 (master)
+$
